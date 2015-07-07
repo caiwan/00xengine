@@ -1,5 +1,7 @@
-Debug
-Release
+Debug/
+Release/
+obj/
+bin/
 *.dll
 *.lib
 *.obj
@@ -9,4 +11,5 @@ Release
 *.so
 *.suo
 *.sdf
+*.opensdf
 *.user
