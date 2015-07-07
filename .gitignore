@@ -1,0 +1,12 @@
+Debug
+Release
+*.dll
+*.lib
+*.obj
+*.a
+*.o
+*.log
+*.so
+*.suo
+*.sdf
+*.user

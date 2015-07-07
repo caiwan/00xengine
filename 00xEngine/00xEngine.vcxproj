@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Core\Camera.hpp" />
+    <ClInclude Include="..\src\Core\Entity.hpp" />
+    <ClInclude Include="..\src\Core\Enums.hpp" />
+    <ClInclude Include="..\src\Core\Frustum.hpp" />
+    <ClInclude Include="..\src\Core\Image.hpp" />
+    <ClInclude Include="..\src\Core\Input.hpp" />
+    <ClInclude Include="..\src\Core\Resource.hpp" />
+    <ClInclude Include="..\src\Core\ResourceManager.hpp" />
+    <ClInclude Include="..\src\Core\Settings.hpp" />
+    <ClInclude Include="..\src\Core\Window.hpp" />
+    <ClInclude Include="..\src\Debug\Debug.hpp" />
+    <ClInclude Include="..\src\Debug\Exceptions.hpp" />
+    <ClInclude Include="..\src\Debug\Logger.hpp" />
+    <ClInclude Include="..\src\Debug\MemoryManager.hpp" />
+    <ClInclude Include="..\src\Debug\New.hpp" />
+    <ClInclude Include="..\src\Debug\NewOff.hpp" />
+    <ClInclude Include="..\src\Math\AABB.hpp" />
+    <ClInclude Include="..\src\Math\Mathlib.hpp" />
+    <ClInclude Include="..\src\Math\Matrix4.hpp" />
+    <ClInclude Include="..\src\Math\Quaternion.hpp" />
+    <ClInclude Include="..\src\Math\Rectangle.hpp" />
+    <ClInclude Include="..\src\Math\Vector2.hpp" />
+    <ClInclude Include="..\src\Math\Vector3.hpp" />
+    <ClInclude Include="..\src\Renderer\Light.hpp" />
+    <ClInclude Include="..\src\Renderer\Renderer.hpp" />
+    <ClInclude Include="..\src\Renderer\Shader.hpp" />
+    <ClInclude Include="..\src\Renderer\Text.hpp" />
+    <ClInclude Include="..\src\Renderer\Texture.hpp" />
+    <ClInclude Include="..\src\Renderer\VAO.hpp" />
+    <ClInclude Include="..\src\Renderer\VBO.hpp" />
+    <ClInclude Include="..\src\Utils\Clock.hpp" />
+    <ClInclude Include="..\src\Utils\Color.hpp" />
+    <ClInclude Include="..\src\Utils\File.hpp" />
+    <ClInclude Include="..\src\Utils\Keys.hpp" />
+    <ClInclude Include="..\src\Utils\Shared.hpp" />
+    <ClInclude Include="..\src\Utils\Singleton.hpp" />
+    <ClInclude Include="..\src\Utils\SPointer.hpp" />
+    <ClInclude Include="..\src\Utils\SPointerPolicies.hpp" />
+    <ClInclude Include="..\src\Utils\String.hpp" />
+    <ClInclude Include="..\src\Utils\StringConverter.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Core\Camera.cpp" />
+    <ClCompile Include="..\src\Core\Entity.cpp" />
+    <ClCompile Include="..\src\Core\Frustum.cpp" />
+    <ClCompile Include="..\src\Core\Image.cpp" />
+    <ClCompile Include="..\src\Core\Input.cpp" />
+    <ClCompile Include="..\src\Core\Resource.cpp" />
+    <ClCompile Include="..\src\Core\ResourceManager.cpp" />
+    <ClCompile Include="..\src\Core\Settings.cpp" />
+    <ClCompile Include="..\src\Core\Window.cpp" />
+    <ClCompile Include="..\src\Debug\Exceptions.cpp" />
+    <ClCompile Include="..\src\Debug\Logger.cpp" />
+    <ClCompile Include="..\src\Debug\MemoryManager.cpp" />
+    <ClCompile Include="..\src\Extern\glew\glew.c" />
+    <ClCompile Include="..\src\Math\AABB.cpp" />
+    <ClCompile Include="..\src\Math\Mathlib.cpp" />
+    <ClCompile Include="..\src\Math\Rectangle.cpp" />
+    <ClCompile Include="..\src\Renderer\Light.cpp" />
+    <ClCompile Include="..\src\Renderer\Renderer.cpp" />
+    <ClCompile Include="..\src\Renderer\Shader.cpp" />
+    <ClCompile Include="..\src\Renderer\Text.cpp" />
+    <ClCompile Include="..\src\Renderer\Texture.cpp" />
+    <ClCompile Include="..\src\Renderer\VAO.cpp" />
+    <ClCompile Include="..\src\Renderer\VBO.cpp" />
+    <ClCompile Include="..\src\Utils\Clock.cpp" />
+    <ClCompile Include="..\src\Utils\Color.cpp" />
+    <ClCompile Include="..\src\Utils\File.cpp" />
+    <ClCompile Include="..\src\Utils\Shape.cpp" />
+    <ClCompile Include="..\src\Utils\StringConverter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\Math\Mathlib.inl" />
+    <None Include="..\src\Math\Matrix4.inl" />
+    <None Include="..\src\Math\Quaternion.inl" />
+    <None Include="..\src\Math\Vector2.inl" />
+    <None Include="..\src\Math\Vector3.inl" />
+    <None Include="..\src\Utils\String.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FD239E3C-3BCA-4881-9C8F-619CB2938722}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>My00xEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <IntDir>obj\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>objRelease\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OOXEXPORTS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\C++\00xEngine\src;E:\C++\00xEngine\src\Extern;E:\C++\00xEngine\src\Extern\freetype;E:\C++\00xEngine\src\Extern\glew</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;OpenGL32.lib;glew32.lib;freetype242_D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\C++\00xEngine\src\Extern\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OOXEXPORTS;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\C++\00xEngine\src;E:\C++\00xEngine\src\Extern;E:\C++\00xEngine\src\Extern\freetype;E:\C++\00xEngine\src\Extern\glew</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>E:\C++\00xEngine\src\Extern\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;OpenGL32.lib;glew32.lib;freetype242_D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
