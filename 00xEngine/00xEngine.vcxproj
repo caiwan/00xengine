@@ -133,7 +133,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>OOXEXPORTS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\C++\00xEngine\src;E:\C++\00xEngine\src\Extern;E:\C++\00xEngine\src\Extern\freetype;E:\C++\00xEngine\src\Extern\glew</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutiondir)src;$(solutiondir)src\Extern;$(solutiondir)src\Extern\freetype;$(solutiondir)src\Extern\glew</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -151,7 +151,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>OOXEXPORTS;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\C++\00xEngine\src;E:\C++\00xEngine\src\Extern;E:\C++\00xEngine\src\Extern\freetype;E:\C++\00xEngine\src\Extern\glew</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutiondir)src;$(solutiondir)src\Extern;$(solutiondir)src\Extern\freetype;$(solutiondir)src\Extern\glew</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
