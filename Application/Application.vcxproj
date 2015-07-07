@@ -52,12 +52,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\C++\00xEngine\src;E:\C++\00xEngine\src\Extern;E:\C++\00xEngine\src\Extern\glew;E:\C++\00xEngine\src\Extern\freetype</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutiondir)src;$(solutiondir)src\Extern;$(solutiondir)src\Extern\freetype;$(solutiondir)src\Extern\glew</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>E:\C++\00xEngine\00xEngine\Debug;E:\C++\00xEngine\src\Extern\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(solutiondir)src;$(solutiondir)src\Extern;$(solutiondir)src\Extern\freetype;$(solutiondir)src\Extern\glew;$(solutiondir)00xEngine\Debug;$(solutiondir)src\Extern\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>00xEngine.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;OpenGL32.lib;glew32.lib;freetype242_D.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
@@ -76,7 +76,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\C++\00xEngine\src;E:\C++\00xEngine\src\Extern;E:\C++\00xEngine\src\Extern\glew;E:\C++\00xEngine\src\Extern\freetype</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(solutiondir)src;$(solutiondir)src\Extern;$(solutiondir)src\Extern\freetype;$(solutiondir)src\Extern\glew</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -84,7 +84,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>00xEngine.lib;sfml-graphics.lib;sfml-window.lib;sfml-system.lib;OpenGL32.lib;glew32.lib;freetype242_D.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>E:\C++\00xEngine\00xEngine\Debug;E:\C++\00xEngine\src\Extern\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(solutiondir)src;$(solutiondir)src\Extern;$(solutiondir)src\Extern\freetype;$(solutiondir)src\Extern\glew;$(solutiondir)00xEngine\Debug;$(solutiondir)src\Extern\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
